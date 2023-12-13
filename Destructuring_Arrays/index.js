@@ -55,3 +55,14 @@ console.log(food, anotherFood);
 //[] = > dont thing ist that thing like everthing varaiable
 [anotherFood, food] = [food, anotherFood];
 console.log(food, anotherFood);
+
+//Normal Method of swabing
+let third;
+let hello = "santhosh";
+let world = "ajay";
+console.log(hello, world);
+
+third = world;
+world = hello;
+hello = third;
+console.log(hello, world);
