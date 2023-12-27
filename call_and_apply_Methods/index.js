@@ -32,3 +32,33 @@ getting_Object.call(chinnakaruppan_Marks, "chinna", 2009);
 // Solving The Problem Solution 2
 
 getting_Object.apply(santhosh_Marks, ["Ajay", 2005]);
+
+// bind Method its Return a new fn
+
+const storeing_Returned_Fn = getting_Object.bind(chinnakaruppan_Marks);
+storeing_Returned_Fn("Takamitzi", 2000);
+
+// bind Method Setting Defult Parametter
+
+const setting_Up = getting_Object.bind(chinnakaruppan_Marks, "Same Name");
+setting_Up(2001);
+setting_Up(1999);
+
+// Task Caluculator Application Using Returning Function We cant to in bind
+
+const calu = (input, Value) => {
+  let adding = input + Value;
+  console.log(adding);
+};
+
+const add = calu.bind(null, 9);
+add(); // 10
+add(); // 10
+add(); // 10
+
+// Task With Fixed Parametter
+
+const adding = calu.bind(null, 10, 30);
+adding(1); // 10
+adding(10); // 20
+adding(); // 40
